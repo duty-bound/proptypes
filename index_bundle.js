@@ -137,9 +137,10 @@ var Hello = function Hello(_ref) {
       key: i
     }, value, " ");
   })));
-};
+}; //proptypes
+
 Hello.propTypes = {
-  title: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
+  title: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   date: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
   month: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
   year: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,

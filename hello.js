@@ -22,8 +22,9 @@ export const Hello = ({
       <p>{Object.values(computer).map((value, i) => <span key={i}>{value} </span>)}</p>
     </div>
 
+//proptypes
   Hello.propTypes = {
-      title: PropTypes.number,
+      title: PropTypes.string,
       date: PropTypes.number,
       month: PropTypes.number,
       year: PropTypes.number,
