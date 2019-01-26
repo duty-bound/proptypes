@@ -6,6 +6,7 @@ module.exports = {
 		path: path.join(__dirname),
 		filename: 'index_bundle.js'
 	},
+	mode: 'development',
 	module: {
 	rules: [{
 		test: /\.js$/,
