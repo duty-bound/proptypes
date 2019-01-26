@@ -14,7 +14,7 @@ export const Hello = ({
     computer
   }) =>
     <div>
-      <h2>{title}</h2>
+      <h2>title</h2>
       <p>Date: <span>{date}/{month}/{year}</span></p>
       <p>Weekend: {isWeekend(day) ? 'yes' : 'no'}</p>
       <p>Single: {status ? 'single' : 'engaged'}</p>
@@ -23,15 +23,14 @@ export const Hello = ({
     </div>
 
 //proptypes
-//isRequired next
-  Hello.propTypes = {
-      title: PropTypes.string,
-      date: PropTypes.number,
-      month: PropTypes.number,
-      year: PropTypes.number,
-      isWeekend: PropTypes.func,
-      day: PropTypes.number,
-      status: PropTypes.bool,
-      oss: PropTypes.array,
-      computer: PropTypes.object,
+Hello.propTypes = {
+      title: PropTypes.string.isRequired,
+      date: PropTypes.number.isRequired,
+      month: PropTypes.number.isRequired,
+      year: PropTypes.number.isRequired,
+      isWeekend: PropTypes.func.isRequired,
+      day: PropTypes.number.isRequired,
+      status: PropTypes.bool.isRequired,
+      oss: PropTypes.array.isRequired,
+      computer: PropTypes.object.isRequired,
   }
