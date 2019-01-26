@@ -23,6 +23,7 @@ export const Hello = ({
     </div>
 
 //proptypes
+//isRequired next
   Hello.propTypes = {
       title: PropTypes.string,
       date: PropTypes.number,
